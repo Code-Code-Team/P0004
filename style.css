@@ -450,6 +450,12 @@ header #nav-right i {
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  #newsletter .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #boxes {
   margin-top: 20px;
   color: #000000;
@@ -488,6 +494,12 @@ footer {
 
 #main p {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #main .container h1 {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

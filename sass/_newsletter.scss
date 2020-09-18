@@ -29,3 +29,14 @@
 
 
 }
+
+@media only screen and (max-width:768px){
+    #newsletter{
+        .container{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+    }
+}
