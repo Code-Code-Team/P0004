@@ -13,20 +13,6 @@ body {
   overflow: hidden;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: #ffffff;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
 header {
   background-color: #35424a;
   color: #ffffff;
@@ -46,6 +32,7 @@ header .current a {
   font-weight: bold;
 }
 header a {
+  text-decoration: none;
   color: #ffffff;
 }
 header #nav-right {
@@ -62,11 +49,16 @@ header #nav-right ul li {
   padding: 0px 20px;
   text-transform: uppercase;
 }
-header #nav-right i {
+header #nav-right button {
   font-size: 24px;
   color: #ffffff;
   display: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+  
 }
+
 
 @media only screen and (max-width: 768px) {
   header .container {
@@ -74,18 +66,35 @@ header #nav-right i {
     flex-flow: row;
     justify-content: space-between;
   }
-  header .container #nav-right {
+  header .container #nav-right{
     display: flex;
-    flex-flow: row;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: #a9508b;
   }
-  header .container #nav-right ul li {
+
+
+  header .container #nav-right .hamburger{
+    
+  }
+  header .container .nav-right-ul {
     display: none;
   }
-  header .container #nav-right i {
+  .nav-right-ul.show{
+    display: flex !important;
+    flex-direction: column;
+
+  }
+
+  .nav-right-ul.show li{
+    display: block !important;
+  }
+
+  header .container #nav-right button {
     display: block;
+    
   }
 }
-
 
 
 

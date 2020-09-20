@@ -1,94 +1,102 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #a9508b 3px solid;
+}
+header #box-left {
+  float: left;
+}
+header #box-left h1 {
+  margin: 0;
+}
+header .highlight,
+header .current a {
+  color: #a9508b;
+  font-weight: bold;
+}
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+header #nav-right {
+  float: right;
+  margin: 10px;
+}
+header #nav-right ul {
+  margin: 0;
+  padding: 0;
+}
+header #nav-right ul li {
+  float: left;
+  display: inline;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+header #nav-right button {
+  font-size: 24px;
+  color: #ffffff;
+  display: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
   
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 768px) {
+  header .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
   }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
+  header .container #nav-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: #a9508b;
   }
-  
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+
+
+  header .container #nav-right .hamburger{
+    
   }
-  
-  header {
-    background-color: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #a9508b 3px solid;
-  }
-  header #box-left {
-    float: left;
-  }
-  header #box-left h1 {
-    margin: 0;
-  }
-  header .highlight,
-  header .current a {
-    color: #a9508b;
-    font-weight: bold;
-  }
-  header a {
-    text-decoration:none;
-    color: #ffffff;
-  }
-  header #nav-right {
-    float: right;
-    margin: 10px;
-  }
-  header #nav-right ul {
-    margin: 0;
-    padding: 0;
-  }
-  header #nav-right ul li {
-    float: left;
-    display: inline;
-    padding: 0px 20px;
-    text-transform: uppercase;
-  }
-  header #nav-right i {
-    font-size: 24px;
-    color: #ffffff;
+  header .container .nav-right-ul {
     display: none;
   }
-  
-  @media only screen and (max-width: 768px) {
-    header .container {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-    }
-    header .container #nav-right {
-      display: flex;
-      flex-flow: row;
-    }
-    header .container #nav-right ul li {
-      display: none;
-    }
-    header .container #nav-right i {
-      display: block;
-    }
+  .nav-right-ul.show{
+    display: flex !important;
+    flex-direction: column;
 
+  }
+
+  .nav-right-ul.show li{
+    display: block !important;
+  }
+
+  header .container #nav-right button {
+    display: block;
+    
+  }
+}
     #newsletter .container form{
       margin-left:0px;
     }
-  }
   
   
   

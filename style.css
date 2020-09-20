@@ -404,21 +404,30 @@ header #nav-right button {
     flex-flow: row;
     justify-content: space-between;
   }
-  header .container #nav-right {
+  header .container #nav-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: #a9508b;
+  }
+
+
+  header .container #nav-right .hamburger{
     
-    /* display: flex;
-    flex-flow: row; */
   }
   header .container .nav-right-ul {
     display: none;
   }
   .nav-right-ul.show{
-    width: 100%;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    
 
   }
+
+  .nav-right-ul.show li{
+    display: block !important;
+  }
+
   header .container #nav-right button {
     display: block;
     
