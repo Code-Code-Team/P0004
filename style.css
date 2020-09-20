@@ -387,11 +387,16 @@ header #nav-right ul li {
   padding: 0px 20px;
   text-transform: uppercase;
 }
-header #nav-right i {
+header #nav-right button {
   font-size: 24px;
   color: #ffffff;
   display: none;
+  border:none;
+  background-color: transparent;
+  cursor: pointer;
+  
 }
+
 
 @media only screen and (max-width: 768px) {
   header .container {
@@ -400,14 +405,23 @@ header #nav-right i {
     justify-content: space-between;
   }
   header .container #nav-right {
-    display: flex;
-    flex-flow: row;
+    
+    /* display: flex;
+    flex-flow: row; */
   }
-  header .container #nav-right ul li {
+  header .container .nav-right-ul {
     display: none;
   }
-  header .container #nav-right i {
+  .nav-right-ul.show{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+  }
+  header .container #nav-right button {
     display: block;
+    
   }
 }
 #showcase {
